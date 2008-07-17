@@ -1,0 +1,5 @@
+DEBUGFILE="/tmp/sourcedebug.txt"
+FILECACHE="/tmp/sourcebrowser_filecache.yaml"
+CONTEXTVERSION = File.readlink("/opt/context/current").chomp('/')
+BASE           = "/opt/context/#{CONTEXTVERSION}/texmf"
+URL="/index.rb?"

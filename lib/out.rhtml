@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+    <HEAD><LINK href="/browser.css" rel="stylesheet" type="text/css">
+        <TITLE>ConTeXt source browser</TITLE>
+    </HEAD>
+    <BODY>
+        <DIV class="head">
+            <div class="menu"><H1>ConTeXt source browser</H1>
+                <FORM METHOD="get" ENCTYPE="application/x-www-form-urlencoded" ACTION="/">
+                    <INPUT name="search" size="20" type="text" value="<%= @search %>" maxlength="150">
+                    <INPUT type="submit" value="search">
+                <% if @search %>
+                <A href="/" style="margin-left:20px;">show all</A>
+                <% end %>
+                <br><INPUT name="igncomments" <%= checked="checked" if @cmd['igncomments'] %> type="checkbox" value="yes">ignore comments</FORM>
+        </DIV>
+        <% if @fileinfo %><div class="fileinfo"><%= @fileinfo %></div><% end %>
+        </DIV>
+        <div class="navigation">
+            <ul><span class="contextversion"><%= CONTEXTVERSION %>:<br /></span></ul>
+            <%= @navigation %>
+        </div>
+        <% if @source %>
+         <div class="source"><pre><%= @source %></pre></div>
+        <% end %>
+    </BODY>
+</HTML>

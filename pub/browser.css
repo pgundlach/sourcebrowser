@@ -1,0 +1,79 @@
+body {
+  margin:0px; 
+  padding:0px;
+  font-family:sans-serif;
+} 
+
+div.head { 
+  /* border: solid; */
+  float: top;
+}
+.menu { 
+  padding:5px;
+  /*   float:left; */
+  /* border: dashed; */
+}
+
+div.fileinfo { 
+  /*      top  right bottom left  */
+  margin: 5px 10px 5px 10px; 
+  padding: 5px;
+  /* background:silver;  */
+  height: 40px;
+  vertical-align:middle;
+  /* float: right;  */
+
+}
+
+div.contextversion { 
+  font-size: 90%;
+  margin-bottom: 10px;
+}
+
+div.navigation { 
+  background:silver; 
+  float:left; 
+  padding:5px; 
+  border:1px solid black; 
+  width:20%; 
+  /*      top  right bottom left  */
+  margin: 10px 10px 10px 10px; 
+} 
+
+div.navigation  ul { 
+  list-style-type:none;
+  margin:5px;
+  padding:1px;
+}
+
+div.navigation li { 
+  padding:0;
+  margin:1;
+}
+
+div.source { 
+  background-color: #f9f9f9;
+  float:left; 
+  padding:5px; 
+/*   border:1px solid black;  */
+  border: 1px dashed #2f6fab;
+  width:66%; 
+  margin: 10px 10px 10px 10px; 
+}
+
+pre {
+  /*  padding: 1em; */
+  color: Black;
+}
+
+h1 { font-size: 100%; }
+
+pre.tex { color:#000000;  }
+pre.xml { color:#000000;  }
+
+pre span.cs { color:#0000FF; }
+pre span.def { color:Green; }
+pre span.comment { color:#333333; }
+pre span.br { color:red; }
+pre span.name    { color:blue; }
+pre span.highlight    { background-color:yellow; }

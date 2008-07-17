@@ -65,7 +65,7 @@ class PGPretty
 			case lookingat
 			when /\A\/(&gt;)/
 				tmp << %Q!<span class="cs">/</span><span class="br">#{$1}</span>!
-				pos += $&.length + 1
+				pos += $&.length
 			when /\A(&gt;)/
 				tmp << %Q!<span class="br">#{$1}</span>!
 				pos += $&.length
